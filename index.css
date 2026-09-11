@@ -1,0 +1,18 @@
+body {
+    background: #1e1f22;
+}
+
+.profile-card {
+    width: 400px;
+    background: #2b2d31;
+}
+
+.banner {
+    height: 120px;
+    background-image: url("images/banner.jpg");
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+}
