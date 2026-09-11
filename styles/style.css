@@ -7,7 +7,7 @@
 /* Dit verwijst naar het <html> element. De <html> krijgt een lichtgele achtergrond. */
 
 html {
-  background:lightyellow;
+  background:rgb(255 135 193)
 }
 
 /* BODY */
@@ -18,11 +18,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  text-align: center; 
+
   height: 100vh;
   
-  font-family: open sans;
-  color: #10214e; /* de tekst kleur wordt in hex kleuren bepaald. */
+  font-family: system-ui;
+  color: #ffd2e6; /* de tekst kleur wordt in hex kleuren bepaald. */
 }
 
 /* ARTICLE */
@@ -43,8 +44,8 @@ article {
   min-width: 20em;
   
   border-radius: 1rem;
-  background: #ffe8f0
-  background: linear-gradient(0deg, rgb(255 54 124) 40%, ##ffc26e 100%);
+  background: rgb(31 31 31);
+  background: linear-gradient(0deg, rgb(255 135 193) 40%, rgb(71 5 37) 100%);
   box-shadow: 0 0 20px 20px rgb(0 0 0 / .1);
   
   transition: .25s;
@@ -64,15 +65,15 @@ header {
 h1 {
   margin: 2rem 0 1rem 0; /* Margin is de ruimte om het element heen. Boven beginnen, met de klok mee */
   
-  color: rgb(0 239 255); /* De tekst kleur wordt in rgb() bepaald. */
+  color: rgb(255 214 234); /* De tekst kleur wordt in rgb() bepaald. */
 }
 
 /* Class */
 /* De <p> heeft in de HTML de class slogan gekregen. */
 /* Om een element met class te selecteren gebruik je een . in de selector */
 .slogan {
-  font-size:1.25em;
-  color:#030711;
+  font-size:1.em;
+  color:rgb(255 214 234);
 }
 
 /* BUTTON */
@@ -88,7 +89,7 @@ button {
   
   border: none;
   border-radius: 50%; /* De border-radius geeft de <button> ronde hoekjes. */
-  background: rgb(0 239 255);
+  background: rgb(31 31 31);
   
   scale:.8;
   
@@ -99,12 +100,12 @@ button {
 /* :hover is een 'Pseudo-class selector', daarmee worden interacties op het element gestyled. */
 button:hover {
   cursor: pointer;
-  background: darkgoldenrod;
+  background: #ffbddd;
 }
 /* Met de 'Pseudo-class selector' :focus kan je bepalen hoe het element er uit moet zien als de tab toets op het toetsenbord wordt gebruikt. */
 button:focus {
   outline: none;
-  background: darkgoldenrod;
+  background: #ffbddd;
 }
 
 /* In het <button> element staat een <svg> voor het icoon. */
@@ -114,7 +115,7 @@ button svg {
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
   
-  stroke: #4e54c8;
+  stroke: #ffbddd;
   
   transition: .25s;
   transition-delay: .25s; /* Een transitie op het <svg> element begin 0.25 seconde later. */
@@ -137,6 +138,8 @@ img {
   position: relative;
   top: 2rem;
   
+  
+
   width: 10em;
   height: auto;
   
@@ -168,13 +171,13 @@ dl {
   padding: 5rem 0 3rem;
   
   text-align: center;
-  background: rgb(255 255 255);
+  background: rgb(31 31 31);
 
   dt {
     margin-top: .25rem;
     padding-top: .25rem;
     
-    border-top: 1px solid rgb(0 0 0 / 0.3);
+    border-top: 1px solid rgb(31 31 31 / 0.3);
     font-weight: bold;
     
     &:nth-of-type(1) {
@@ -217,7 +220,8 @@ article > p {
   margin-top: 0;
   padding: 3rem 2rem;
   
-  background: rgb(255 255 255 / 0.5);
+  background: rgb(31 31 31);
+ 
   border-radius: 0 0 1rem 1rem;
   text-align: center;
 }
