@@ -226,13 +226,25 @@ button svg:nth-of-type(2) {
 
 .spotify-activity {
 
+  border-radius: 1em;
+  margin-right: 1em;
+  background-color: rgb(255, 242, 250);
   display: flex;
   flex-direction: row;
 }
 
+.album-cover {
+  margin: 2em;
+  width: 10em;
+  height: 10em;
+}
+
 .spotify-status {
+  color: rgb(31 31 31);
   margin: 2em;
 }
+
+
 
 
 /* DL, DT, DD  */
@@ -246,56 +258,7 @@ button svg:nth-of-type(2) {
 
 
 
-dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "html-dd css-dd js-dd"
-    "html-dt css-dt js-dt"
-    ;
-  justify-items: center;
-  align-items: start;
-  
-  width: 100%;
-  margin-top: -3rem;
-  margin-bottom: 0;
-  padding: 5rem 0 3rem;
-  
-  text-align: center;
-  
 
-  dt {
-    margin-top: .25rem;
-    padding-top: .25rem;
-    
-    border-top: 1px solid rgb(31 31 31 / 0.3);
-    font-weight: bold;
-    
-    &:nth-of-type(1) {
-      grid-area: html-dt;
-    }
-    
-    &:nth-of-type(2) {
-      grid-area: css-dt;
-      translate:0 1rem;
-    }
-    
-    &:nth-of-type(3) {
-      grid-area: js-dt;
-    }
-  }
-
-  dd {
-    margin: 0;
-    padding-left: .3rem;
-    
-    transition: .25s .3s;
-    
-    &:nth-of-type(2) {
-      translate:0 1rem;
-    }
-  }
-}
 
 /* P */
 /* Hier krijgen alle <p> elementen een styling. */
