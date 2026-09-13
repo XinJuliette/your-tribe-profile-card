@@ -32,7 +32,8 @@ body {
 /* Er wordt een breedte meegegeven, een minimale en maximale breedte. */
 /* Het <article> element krijgt een kleur, en nog meer ... */
 article {
-  
+
+   
   position: relative;
   
   display: flex;
@@ -164,7 +165,8 @@ button svg:nth-of-type(2) {
 
 
 .profile-info{
-  margin: 1em;
+  margin-left: 1em;
+  
 
   display:flex;
   align-self: flex-start;
@@ -179,6 +181,58 @@ button svg:nth-of-type(2) {
 
 }
 
+.slogan {
+  margin-top: -1em;
+  font-size: smaller;
+}
+
+
+
+.about-me {
+  margin-top: 1em;
+  margin-left: 1em;
+
+  display:flex;
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: small;
+
+}
+
+
+.about-me-text {
+  margin-top: -.5em;
+  margin-bottom: 1em;
+
+  display: flex;
+  text-align: left;
+
+  
+}
+
+.activity {
+  margin-top: 1em;
+  margin-left: 1em;
+
+  display:flex;
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: small;
+}
+
+.spotify-activity {
+
+  display: flex;
+  flex-direction: row;
+}
+
+.spotify-status {
+  margin: 2em;
+}
 
 
 /* DL, DT, DD  */
