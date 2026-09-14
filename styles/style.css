@@ -213,7 +213,7 @@ button svg:nth-of-type(2) {
 }
 
 .activity {
-  margin: 1em;
+  margin: 2em;
   justify-self: center;
 
   display:flex;
@@ -226,6 +226,10 @@ button svg:nth-of-type(2) {
 
 .spotify-activity {
 
+  padding: 1em;
+
+  align-items: center;
+
   border-radius: 1em;
   
   background-color: rgb(255, 242, 250);
@@ -233,15 +237,19 @@ button svg:nth-of-type(2) {
   flex-direction: row;
 }
 
+.spotify-logo {
+  padding: 2em;
+
+}
+
 .album-cover {
-  margin: 2em;
+  
   width: 10em;
   height: 10em;
 }
 
 .spotify-status {
   color: rgb(31 31 31);
-  margin: 2em;
 }
 
 
@@ -325,5 +333,11 @@ body.is-expanded img {
 body.is-expanded .banner-background {
 
     max-width: 60vw;
+
+}
+
+body.is-expanded .album-cover {
+
+  padding: 1em;
 
 }
